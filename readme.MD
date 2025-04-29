@@ -38,13 +38,11 @@ This project demonstrates the deployment of a MySQL database in two stages:
 ```
 
 1.2 Connect to MySQL
-
-``` docker exec -it mysql-container mysql -u root -p ```
+` docker exec -it mysql-container mysql -u root -p `
 
 2. Kubernetes MySQL Setup
 
 2.1 Apply the Persistent Volume
-
 ``` kubectl apply -f k8s/mysql-pv.yaml ```
 
 2.2 Apply the Persistent Volume Claim
